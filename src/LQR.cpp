@@ -29,7 +29,7 @@ void LQR::LQR_control(const real_T *rtu_State_position, const real_T
   // Gain: '<S1>/Gain' incorporates:
   //   SignalConversion generated from: '<S1>/Gain'
 
-  *rty_Torque = *rtu_State_position * -0.0 + *rtu_State_velocity * -0.0;
+  *rty_Torque = *rtu_State_position * -1.0 + *rtu_State_velocity * -1.0;
 
   // End of Outputs for RootInportFunctionCallGenerator generated from: '<Root>/control' 
 }
