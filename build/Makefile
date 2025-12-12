@@ -117,48 +117,38 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named ert_main
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+ert_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ert_main
+.PHONY : ert_main
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
+ert_main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/build
+.PHONY : ert_main/fast
 
-src/Architecture.o: src/Architecture.cpp.o
-.PHONY : src/Architecture.o
+#=============================================================================
+# Target rules for targets named main_yarp
 
-# target to build an object file
-src/Architecture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Architecture.cpp.o
-.PHONY : src/Architecture.cpp.o
+# Build rule for target.
+main_yarp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main_yarp
+.PHONY : main_yarp
 
-src/Architecture.i: src/Architecture.cpp.i
-.PHONY : src/Architecture.i
-
-# target to preprocess a source file
-src/Architecture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Architecture.cpp.i
-.PHONY : src/Architecture.cpp.i
-
-src/Architecture.s: src/Architecture.cpp.s
-.PHONY : src/Architecture.s
-
-# target to generate assembly for a file
-src/Architecture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Architecture.cpp.s
-.PHONY : src/Architecture.cpp.s
+# fast build rule for target.
+main_yarp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/build
+.PHONY : main_yarp/fast
 
 src/Control.o: src/Control.cpp.o
 .PHONY : src/Control.o
 
 # target to build an object file
 src/Control.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Control.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/Control.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/Control.cpp.o
 .PHONY : src/Control.cpp.o
 
 src/Control.i: src/Control.cpp.i
@@ -166,7 +156,8 @@ src/Control.i: src/Control.cpp.i
 
 # target to preprocess a source file
 src/Control.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Control.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/Control.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/Control.cpp.i
 .PHONY : src/Control.cpp.i
 
 src/Control.s: src/Control.cpp.s
@@ -174,15 +165,71 @@ src/Control.s: src/Control.cpp.s
 
 # target to generate assembly for a file
 src/Control.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Control.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/Control.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/Control.cpp.s
 .PHONY : src/Control.cpp.s
+
+src/Fault.o: src/Fault.cpp.o
+.PHONY : src/Fault.o
+
+# target to build an object file
+src/Fault.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/Fault.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/Fault.cpp.o
+.PHONY : src/Fault.cpp.o
+
+src/Fault.i: src/Fault.cpp.i
+.PHONY : src/Fault.i
+
+# target to preprocess a source file
+src/Fault.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/Fault.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/Fault.cpp.i
+.PHONY : src/Fault.cpp.i
+
+src/Fault.s: src/Fault.cpp.s
+.PHONY : src/Fault.s
+
+# target to generate assembly for a file
+src/Fault.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/Fault.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/Fault.cpp.s
+.PHONY : src/Fault.cpp.s
+
+src/HarnessControl.o: src/HarnessControl.cpp.o
+.PHONY : src/HarnessControl.o
+
+# target to build an object file
+src/HarnessControl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/HarnessControl.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/HarnessControl.cpp.o
+.PHONY : src/HarnessControl.cpp.o
+
+src/HarnessControl.i: src/HarnessControl.cpp.i
+.PHONY : src/HarnessControl.i
+
+# target to preprocess a source file
+src/HarnessControl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/HarnessControl.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/HarnessControl.cpp.i
+.PHONY : src/HarnessControl.cpp.i
+
+src/HarnessControl.s: src/HarnessControl.cpp.s
+.PHONY : src/HarnessControl.s
+
+# target to generate assembly for a file
+src/HarnessControl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/HarnessControl.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/HarnessControl.cpp.s
+.PHONY : src/HarnessControl.cpp.s
 
 src/LQR.o: src/LQR.cpp.o
 .PHONY : src/LQR.o
 
 # target to build an object file
 src/LQR.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/LQR.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/LQR.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/LQR.cpp.o
 .PHONY : src/LQR.cpp.o
 
 src/LQR.i: src/LQR.cpp.i
@@ -190,7 +237,8 @@ src/LQR.i: src/LQR.cpp.i
 
 # target to preprocess a source file
 src/LQR.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/LQR.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/LQR.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/LQR.cpp.i
 .PHONY : src/LQR.cpp.i
 
 src/LQR.s: src/LQR.cpp.s
@@ -198,56 +246,84 @@ src/LQR.s: src/LQR.cpp.s
 
 # target to generate assembly for a file
 src/LQR.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/LQR.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/LQR.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/LQR.cpp.s
 .PHONY : src/LQR.cpp.s
 
-src/Sensing.o: src/Sensing.cpp.o
-.PHONY : src/Sensing.o
+src/Manager_1.o: src/Manager_1.cpp.o
+.PHONY : src/Manager_1.o
 
 # target to build an object file
-src/Sensing.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Sensing.cpp.o
-.PHONY : src/Sensing.cpp.o
+src/Manager_1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/Manager_1.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/Manager_1.cpp.o
+.PHONY : src/Manager_1.cpp.o
 
-src/Sensing.i: src/Sensing.cpp.i
-.PHONY : src/Sensing.i
+src/Manager_1.i: src/Manager_1.cpp.i
+.PHONY : src/Manager_1.i
 
 # target to preprocess a source file
-src/Sensing.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Sensing.cpp.i
-.PHONY : src/Sensing.cpp.i
+src/Manager_1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/Manager_1.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/Manager_1.cpp.i
+.PHONY : src/Manager_1.cpp.i
 
-src/Sensing.s: src/Sensing.cpp.s
-.PHONY : src/Sensing.s
+src/Manager_1.s: src/Manager_1.cpp.s
+.PHONY : src/Manager_1.s
 
 # target to generate assembly for a file
-src/Sensing.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Sensing.cpp.s
-.PHONY : src/Sensing.cpp.s
+src/Manager_1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/Manager_1.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/Manager_1.cpp.s
+.PHONY : src/Manager_1.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/ert_main.o: src/ert_main.cpp.o
+.PHONY : src/ert_main.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/ert_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/ert_main.cpp.o
+.PHONY : src/ert_main.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/ert_main.i: src/ert_main.cpp.i
+.PHONY : src/ert_main.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/ert_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/ert_main.cpp.i
+.PHONY : src/ert_main.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/ert_main.s: src/ert_main.cpp.s
+.PHONY : src/ert_main.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/ert_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ert_main.dir/build.make CMakeFiles/ert_main.dir/src/ert_main.cpp.s
+.PHONY : src/ert_main.cpp.s
+
+src/main_yarp.o: src/main_yarp.cpp.o
+.PHONY : src/main_yarp.o
+
+# target to build an object file
+src/main_yarp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/main_yarp.cpp.o
+.PHONY : src/main_yarp.cpp.o
+
+src/main_yarp.i: src/main_yarp.cpp.i
+.PHONY : src/main_yarp.i
+
+# target to preprocess a source file
+src/main_yarp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/main_yarp.cpp.i
+.PHONY : src/main_yarp.cpp.i
+
+src/main_yarp.s: src/main_yarp.cpp.s
+.PHONY : src/main_yarp.s
+
+# target to generate assembly for a file
+src/main_yarp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_yarp.dir/build.make CMakeFiles/main_yarp.dir/src/main_yarp.cpp.s
+.PHONY : src/main_yarp.cpp.s
 
 # Help Target
 help:
@@ -257,22 +333,29 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... main"
-	@echo "... src/Architecture.o"
-	@echo "... src/Architecture.i"
-	@echo "... src/Architecture.s"
+	@echo "... ert_main"
+	@echo "... main_yarp"
 	@echo "... src/Control.o"
 	@echo "... src/Control.i"
 	@echo "... src/Control.s"
+	@echo "... src/Fault.o"
+	@echo "... src/Fault.i"
+	@echo "... src/Fault.s"
+	@echo "... src/HarnessControl.o"
+	@echo "... src/HarnessControl.i"
+	@echo "... src/HarnessControl.s"
 	@echo "... src/LQR.o"
 	@echo "... src/LQR.i"
 	@echo "... src/LQR.s"
-	@echo "... src/Sensing.o"
-	@echo "... src/Sensing.i"
-	@echo "... src/Sensing.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/Manager_1.o"
+	@echo "... src/Manager_1.i"
+	@echo "... src/Manager_1.s"
+	@echo "... src/ert_main.o"
+	@echo "... src/ert_main.i"
+	@echo "... src/ert_main.s"
+	@echo "... src/main_yarp.o"
+	@echo "... src/main_yarp.i"
+	@echo "... src/main_yarp.s"
 .PHONY : help
 
 

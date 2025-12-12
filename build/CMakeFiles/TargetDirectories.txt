@@ -1,3 +1,4 @@
-/home/rpumpo/Github/code-gen-app/build/CMakeFiles/main.dir
+/home/rpumpo/Github/code-gen-app/build/CMakeFiles/ert_main.dir
+/home/rpumpo/Github/code-gen-app/build/CMakeFiles/main_yarp.dir
 /home/rpumpo/Github/code-gen-app/build/CMakeFiles/edit_cache.dir
 /home/rpumpo/Github/code-gen-app/build/CMakeFiles/rebuild_cache.dir

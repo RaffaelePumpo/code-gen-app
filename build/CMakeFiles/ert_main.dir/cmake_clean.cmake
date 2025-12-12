@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ert_main.dir/src/Control.cpp.o"
+  "CMakeFiles/ert_main.dir/src/Control.cpp.o.d"
+  "CMakeFiles/ert_main.dir/src/Fault.cpp.o"
+  "CMakeFiles/ert_main.dir/src/Fault.cpp.o.d"
+  "CMakeFiles/ert_main.dir/src/HarnessControl.cpp.o"
+  "CMakeFiles/ert_main.dir/src/HarnessControl.cpp.o.d"
+  "CMakeFiles/ert_main.dir/src/LQR.cpp.o"
+  "CMakeFiles/ert_main.dir/src/LQR.cpp.o.d"
+  "CMakeFiles/ert_main.dir/src/Manager_1.cpp.o"
+  "CMakeFiles/ert_main.dir/src/Manager_1.cpp.o.d"
+  "CMakeFiles/ert_main.dir/src/ert_main.cpp.o"
+  "CMakeFiles/ert_main.dir/src/ert_main.cpp.o.d"
+  "ert_main"
+  "ert_main.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/ert_main.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

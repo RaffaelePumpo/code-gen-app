@@ -1,0 +1,74 @@
+[
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/ert_main.dir/src/ert_main.cpp.o -c /home/rpumpo/Github/code-gen-app/src/ert_main.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/ert_main.cpp",
+  "output": "CMakeFiles/ert_main.dir/src/ert_main.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/ert_main.dir/src/HarnessControl.cpp.o -c /home/rpumpo/Github/code-gen-app/src/HarnessControl.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/HarnessControl.cpp",
+  "output": "CMakeFiles/ert_main.dir/src/HarnessControl.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/ert_main.dir/src/Control.cpp.o -c /home/rpumpo/Github/code-gen-app/src/Control.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/Control.cpp",
+  "output": "CMakeFiles/ert_main.dir/src/Control.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/ert_main.dir/src/LQR.cpp.o -c /home/rpumpo/Github/code-gen-app/src/LQR.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/LQR.cpp",
+  "output": "CMakeFiles/ert_main.dir/src/LQR.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/ert_main.dir/src/Manager_1.cpp.o -c /home/rpumpo/Github/code-gen-app/src/Manager_1.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/Manager_1.cpp",
+  "output": "CMakeFiles/ert_main.dir/src/Manager_1.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/ert_main.dir/src/Fault.cpp.o -c /home/rpumpo/Github/code-gen-app/src/Fault.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/Fault.cpp",
+  "output": "CMakeFiles/ert_main.dir/src/Fault.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++  -isystem /home/rpumpo/robotology-superbuild/build/install/include -g -std=gnu++17 -o CMakeFiles/main_yarp.dir/src/main_yarp.cpp.o -c /home/rpumpo/Github/code-gen-app/src/main_yarp.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/main_yarp.cpp",
+  "output": "CMakeFiles/main_yarp.dir/src/main_yarp.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++  -isystem /home/rpumpo/robotology-superbuild/build/install/include -g -std=gnu++17 -o CMakeFiles/main_yarp.dir/src/HarnessControl.cpp.o -c /home/rpumpo/Github/code-gen-app/src/HarnessControl.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/HarnessControl.cpp",
+  "output": "CMakeFiles/main_yarp.dir/src/HarnessControl.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++  -isystem /home/rpumpo/robotology-superbuild/build/install/include -g -std=gnu++17 -o CMakeFiles/main_yarp.dir/src/Control.cpp.o -c /home/rpumpo/Github/code-gen-app/src/Control.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/Control.cpp",
+  "output": "CMakeFiles/main_yarp.dir/src/Control.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++  -isystem /home/rpumpo/robotology-superbuild/build/install/include -g -std=gnu++17 -o CMakeFiles/main_yarp.dir/src/LQR.cpp.o -c /home/rpumpo/Github/code-gen-app/src/LQR.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/LQR.cpp",
+  "output": "CMakeFiles/main_yarp.dir/src/LQR.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++  -isystem /home/rpumpo/robotology-superbuild/build/install/include -g -std=gnu++17 -o CMakeFiles/main_yarp.dir/src/Manager_1.cpp.o -c /home/rpumpo/Github/code-gen-app/src/Manager_1.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/Manager_1.cpp",
+  "output": "CMakeFiles/main_yarp.dir/src/Manager_1.cpp.o"
+},
+{
+  "directory": "/home/rpumpo/Github/code-gen-app/build",
+  "command": "/usr/bin/g++  -isystem /home/rpumpo/robotology-superbuild/build/install/include -g -std=gnu++17 -o CMakeFiles/main_yarp.dir/src/Fault.cpp.o -c /home/rpumpo/Github/code-gen-app/src/Fault.cpp",
+  "file": "/home/rpumpo/Github/code-gen-app/src/Fault.cpp",
+  "output": "CMakeFiles/main_yarp.dir/src/Fault.cpp.o"
+}
+]

@@ -39,11 +39,6 @@ FILE_DA_COPIARE=(
     "/mnt/c/Users/rpumpo/Desktop/Github/code-gen-app/codegen/slprj/ert/Manager_1/Manager_1_private.h"
     "/mnt/c/Users/rpumpo/Desktop/Github/code-gen-app/codegen/slprj/ert/Manager_1/Manager_1_types.h"
 
-    # Copy Sensing files
-   # "/mnt/c/Users/rpumpo/Desktop/Github/code-gen-app/codegen/slprj/ert/Sensing/Sensing.cpp"
-    #"/mnt/c/Users/rpumpo/Desktop/Github/code-gen-app/codegen/slprj/ert/Sensing/Sensing.h"
-    #"/mnt/c/Users/rpumpo/Desktop/Github/code-gen-app/codegen/slprj/ert/Sensing/Sensing_private.h"
-    #"/mnt/c/Users/rpumpo/Desktop/Github/code-gen-app/codegen/slprj/ert/Sensing/Sensing_types.h"
 )
 
 
