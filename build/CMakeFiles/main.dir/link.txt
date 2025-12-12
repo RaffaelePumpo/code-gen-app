@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main.dir/src/main.cpp.o CMakeFiles/main.dir/src/Architecture.cpp.o CMakeFiles/main.dir/src/LQR.cpp.o CMakeFiles/main.dir/src/Sensing.cpp.o CMakeFiles/main.dir/src/Control.cpp.o -o main 
